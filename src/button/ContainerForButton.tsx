@@ -4,8 +4,12 @@ import {Button} from "./Button";
 export const ContainerForButton = () => {
 
   const onclickHandler = (info?:string, age?:number) => {
-    console.log(info)
-    console.log(age)
+    if(age){
+      console.log(age)
+    }
+    if(info) {
+      console.log(info)
+    }
   }
 
   return (
