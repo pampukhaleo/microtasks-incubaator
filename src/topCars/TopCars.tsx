@@ -8,17 +8,21 @@ const topCars = [
 
 export const TopCars = () => {
   return (
-    <table>
-      <tr>
-        <th>Manufacturer</th>
-        <th>Model</th>
-      </tr>
-      {topCars.map(car => (
+    <table style={{border: '1px solid black', width: '250px'}}>
+      <thead>
         <tr>
-          <td>{car.manufacturer}</td>
-          <td>{car.model}</td>
+          <th>Manufacturer</th>
+          <th>Model</th>
         </tr>
-      ))}
+      </thead>
+      <tbody>
+        {topCars.map((car, i) => (
+          <tr key={i}>
+            <td>{car.manufacturer}</td>
+            <td>{car.model}</td>
+          </tr>
+        ))}
+      </tbody>
     </table>
   )
 }
