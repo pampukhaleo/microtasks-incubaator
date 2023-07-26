@@ -3,6 +3,7 @@ import './App.css';
 import {Money} from "./money/Money";
 import {ContainerForButton} from "./button/ContainerForButton";
 import {TopCars} from "./topCars/TopCars";
+import { InputContainer } from './input/InputContainer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       {/*<TopCars />*/}
       {/*<ContainerForButton />*/}
       {/*<Money />*/}
+      <InputContainer />
     </div>
   );
 }
